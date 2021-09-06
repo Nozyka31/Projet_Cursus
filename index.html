@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mon Toutou</title>
+</head>
+<body>
+    <header>
+        <div id="menubar">
+            <a href="index.html" id="title"><h1><img src="assets/img/Logo.png" alt="Website's logo"></h1></a>
+    
+            <div>
+                <ul class="menu">
+                    <li>
+                        <a href="#" id="btnGardien">
+                            <img src="assets/img/niche-a-chien.png" alt="search">
+                            <span>Deviens Gardien</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/img/parlez.png" alt="search">
+                        <span>Messages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/img/acceder.png" alt="search">
+                            <span>Mon compte</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            
+        </div>
+        
+        <div id="search">
+            <form action="#">
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse" placeholder="Où voulez-vous faire garder votre chien?">
+                <label for="arrivee">Arrivée</label>
+                <input type="date" id="arrivee" name="arrivee" placeholder="Quand?">
+                <label for="depart">Départ</label>
+                <input type="date" id="depart" name="depart" placeholder="Quand?">
+                <label for="nbr">Nombre d'animaux</label>
+                <input type="number" id="nbr" name="nbr" placeholder="Combien?">
+        
+                <a href="search.html"><img src="assets/img/icon_search.png" alt="search"></a>
+            </form>
+        </div>
+            
+    </header>
+
+    <main>
+        <div id="dogs_index">
+            <img src="assets/img/dogs.png" alt="Chiens">
+        </div>
+
+        <div>
+            <h2>Les gardiens préférés de vos voisins !</h2>
+            <ul class="gardiens">
+                <li>
+                    <a href="profil_gardien.html">
+                        <img src="assets/img/1.png" alt="1" class="photo_gardien">
+                        <h4>Lorem Ipsum</h4>
+                        <h5>Lorem Ipsum</h5>
+                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profil_gardien.html">
+                        <img src="assets/img/2.png" alt="2" class="photo_gardien">
+                        <h4>Lorem Ipsum</h4>
+                        <h5>Lorem Ipsum</h5>
+                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profil_gardien.html">
+                        <img src="assets/img/3.png" alt="3" class="photo_gardien">
+                        <h4>Lorem Ipsum</h4>
+                        <h5>Lorem Ipsum</h5>
+                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profil_gardien.html">
+                        <img src="assets/img/4.png" alt="4" class="photo_gardien">
+                        <h4>Lorem Ipsum</h4>
+                        <h5>Lorem Ipsum</h5>
+                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profil_gardien.html">
+                        <img src="assets/img/5.png" alt="5" class="photo_gardien">
+                        <h4>Lorem Ipsum</h4>
+                        <h5>Lorem Ipsum</h5>
+                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <ul>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="aide.html">Aide</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>

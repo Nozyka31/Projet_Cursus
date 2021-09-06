@@ -1,0 +1,52 @@
+
+<div id="divGardien">
+    <form action="" method="get" class="formGardien">
+        <div class="formGardien">
+          <label for="prenom">Prénom </label>
+          <input type="name" name="prenom" id="prenom" required>
+        </div>
+        <div class="formGardien">
+          <label for="nom">Nom </label>
+          <input type="name" name="nom" id="nom" required>
+        </div>
+        <div class="formGardien">
+            <label for="date">Date de naissance </label>
+            <select name="jour" size="1">
+                <option>01</option>
+                <option>mardi</option>
+                <option>mercredi</option>
+                <option>jeudi</option>
+                <option>vendredi</option>
+            </select>
+            <select name="mois" size="1">
+                <option>lundi</option>
+                <option>mardi</option>
+                <option>mercredi</option>
+                <option>jeudi</option>
+                <option>vendredi</option>
+            </select>
+            <select name="annee" size="1">
+                <option>lundi</option>
+                <option>mardi</option>
+                <option>mercredi</option>
+                <option>jeudi</option>
+                <option>vendredi</option>
+            </select>
+          </div>
+        <div class="formGardien">
+            <label for="email">E-mail </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="formGardien">
+            <label for="phone">Téléphone </label>
+            <input type="phone" name="phone" id="phone" required>
+        </div>
+        <div class="formGardien">
+            <label for="adresseGardien">Adresse </label>
+            <input type="text" name="adresseGardien" id="adresseGardien" required>
+        </div>
+        <div class="formGardien">
+          <input type="submit" value="Envoyer">
+        </div>
+      </form>
+</div>
