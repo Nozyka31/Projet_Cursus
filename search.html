@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Mon Toutou</title>
 </head>
 <body>
     <header>
-        <div>
-            <a href="index.html" id="title"><h1>Mon TOUTOU</h1></a>
+        <div id="menubar">
+            <a href="index.html" id="title"><h1><img src="assets/img/Logo.png" alt="Website's logo"></h1></a>
     
-            <div class="menu">
-                <ul>
+            <div>
+                <ul class="menu">
                     <li>
-                        <a href="#">
-                            <img src="assets/img/icon_1.png" alt="search">
+                        <a href="#" class="btn btn-primary" id="btnGardien">
+                            <img src="assets/img/niche-a-chien.png" alt="search">
                             <span>Deviens Gardien</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="assets/img/icon_2.png" alt="search">
-                        <span>Messages</span>
+                        <a class="btn btn-primary" href="#">
+                            <img src="assets/img/parlez.png" alt="search">
+                            <span>Messages</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="assets/img/icon_3.png" alt="search">
-                            <span>Mon compte</span>
+                        <a class="btn btn-primary" href="connection.html">
+                            <img src="assets/img/acceder.png" alt="search">
+                            <span>Connection</span>
                         </a>
                     </li>
                 </ul>
@@ -37,10 +38,10 @@
         </div>
     </header>
     
-    <main>
+    <main class="container">
         <h3>Classement par ordre de pertinence</h3>
 
-        <button id="btn_filtres">FILTRES</button>
+        <button id="btn_filtres" class="btn btn-primary">FILTRES</button>
 
         <div id="filtres">
             <form action="">
@@ -57,126 +58,183 @@
             <ul class="gardiens">
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/1.png" alt="1" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/2.png" alt="2" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/3.png" alt="3" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/4.png" alt="4" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
-                    
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/5.png" alt="5" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/1.png" alt="1" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/2.png" alt="2" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/3.png" alt="3" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/4.png" alt="4" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
-                    
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/5.png" alt="5" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/1.png" alt="1" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/2.png" alt="2" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/3.png" alt="3" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/4.png" alt="4" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
-                    
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/5.png" alt="5" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
             </ul>
         </div>
@@ -185,11 +243,12 @@
     <footer>
         <div id="footer">
             <ul>
-                <li><a href="propos.html">À propos</a></li>
-                <li><a href="aide.html">Aide</a></li>
+                <li><a class="btn btn-primary" href="propos.html">À propos</a></li>
+                <li><a class="btn btn-primary" href="aide.html">Aide</a></li>
             </ul>
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </html>
 

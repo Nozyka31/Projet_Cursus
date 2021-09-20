@@ -3,6 +3,7 @@
 body{
     margin:0;
     padding:0;
+    background-color: #f7f1eb;
 }
 
 ul{
@@ -22,9 +23,10 @@ img{
 
 
 #menubar{
-    background-color: rgb(145, 112, 64);
+    background-color: rgb(177, 149, 108);
     margin-left: 3vw;
     margin-right: 3vw;
+    margin-bottom: 2vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,6 +37,13 @@ img{
     margin-right: auto;
     display: block;
     width: 30%;
+}
+
+.carousel {
+    width: 80vw;
+    transform: translateX(10vw);
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 #divGardien{
@@ -65,11 +74,9 @@ img{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     list-style: none;
-    background-color: rgb(90, 66, 30);
     border-radius: 5px;
     margin-left: 0.5%;   
     margin-right: 0.5%; 
-    margin-top: 1.5%;
 }
 
 .menu li a{
@@ -79,9 +86,35 @@ img{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    color: black;
+    color: white;
 }
 
+#formID{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    min-width: 50vw;
+}
+
+#typeAnnonce{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width:768px){
+    #formID{
+        width: 100vw;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .form{
+        min-width: 90vw;
+    }
+}
 
 #filtres{
     display: none;
@@ -92,24 +125,41 @@ img{
     margin-right: 5vw;
 }
 
+#prefere{
+    margin-bottom: 2%;
+}
+
 .gardiens{
+    min-width: 90vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     list-style: none;
 }
 
 .gardiens li{
     width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1%;
 }
 
 .gardiens li a{
     color: black;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
 
+}
+
+.gardiens li button{
+    width: 100%;
+}
+
+
+    
+.card{
+    width :15vw;
 }
 
 #enTeteProfil{
@@ -124,13 +174,29 @@ img{
 }
 
 #search{
-display: flex;
-flex-direction: row;
-justify-content: center;
-border: solid;
-margin-left: 15%;
-margin-right: 15%;
-margin-top: 3%;
+    border: solid rgb(82, 65, 41);
+    background-color: rgb(177, 149, 108);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    padding: .8%;
+    border-radius: 20px;
+}
+
+#search form{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+#search form div{
+    background-color: #8C6B4D;
+    padding: 0.75%;
+    border-radius: 5px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
 }
 
 
@@ -197,7 +263,7 @@ margin-top: 3%;
 
 #footer{
     
-    background-color: rgb(90, 66, 30);
+    background-color: rgb(177, 149, 108);
     margin-top: 3%;
     padding: 1%;
 }
@@ -217,6 +283,27 @@ footer li{
 footer li a {
     text-decoration: none;
     color: black;
+}
+
+.btn-primary{
+    background-color: #8C6B4D;
+    color: white;
+    border: none;
+    
+}
+
+.btn-primary:hover{
+    background-color: #4b3118;
+    color: white;
+    border: none;
+    
+}
+
+.btn-primary:active{
+    background-color: #6d4017;
+    color: white;
+    border: none;
+    
 }
 
 /* FORMULAIRES */
@@ -293,20 +380,121 @@ footer li a {
     
         margin-left: 5%;
         margin-right: 5%;
-        }
+    }
+
+    .gardiens{
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1200px){
+
+    #typeAnnonce{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #profil{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .carousel{
+        width: 100vw;
+        transform: translateX(0);
+    }
+
+    #search{
+    
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+    #search form{
+    width: 97%;
+    min-width: 97%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+#search form div input {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  #search form button {
+    width: 50%;
+    transform: translate(50%);
+    text-align: center;
+  }
+
+  .gardiens li{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.gardiens{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+    
+.card{
+    width :85vw;
+}
+
+#prefere{
+    text-align: center;
+}
+
+
+
+}
+
+@media screen and (max-width:768px){
     .photo_gardien{
         width: 50%;
     }
 
-    .gardiens li{
-        width: 80%;
+    #profil{
+        margin-left: 2%;
+        margin-right: 2%;
     }
-
-    .gardiens{
+    
+    #description{
+        width: 100vw;
         flex-direction: column;
         align-items: center;
+    }
+
+    #description form{
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    #description form div{
+        margin-bottom: 3%;
     }
 }

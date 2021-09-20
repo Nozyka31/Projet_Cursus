@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Mon Toutou</title>
 </head>
@@ -15,93 +16,156 @@
             <div>
                 <ul class="menu">
                     <li>
-                        <a href="#" id="btnGardien">
+                        <a href="annonce.html" class="btn btn-primary" id="btnGardien">
                             <img src="assets/img/niche-a-chien.png" alt="search">
-                            <span>Deviens Gardien</span>
+                            <span>Dépose une annonce</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="btn btn-primary" href="#">
                             <img src="assets/img/parlez.png" alt="search">
-                        <span>Messages</span>
+                            <span>Messages</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="btn btn-primary" href="connection.html">
                             <img src="assets/img/acceder.png" alt="search">
-                            <span>Mon compte</span>
+                            <span>Connection</span>
                         </a>
                     </li>
                 </ul>
             </div>
-
-            
         </div>
         
         <div id="search">
             <form action="#">
-                <label for="adresse">Adresse</label>
-                <input type="text" id="adresse" name="adresse" placeholder="Où voulez-vous faire garder votre chien?">
-                <label for="arrivee">Arrivée</label>
-                <input type="date" id="arrivee" name="arrivee" placeholder="Quand?">
-                <label for="depart">Départ</label>
-                <input type="date" id="depart" name="depart" placeholder="Quand?">
-                <label for="nbr">Nombre d'animaux</label>
-                <input type="number" id="nbr" name="nbr" placeholder="Combien?">
+                <div>
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Où voulez-vous faire garder votre chien?">
+                </div>
+                <div>
+                    <label for="arrivee">Arrivée</label>
+                    <input type="date" id="arrivee" name="arrivee" placeholder="Quand?">
+                </div>
+                <div>
+                    <label for="depart">Départ</label>
+                    <input type="date" id="depart" name="depart" placeholder="Quand?">
+                </div>
+                <div>
+                    <label for="nbr">Nombre d'animaux</label>
+                    <input type="number" id="nbr" name="nbr" placeholder="Combien?">
+                </div>
         
-                <a href="search.html"><img src="assets/img/icon_search.png" alt="search"></a>
+                <button class="btn btn-primary mb-1">Rechercher</button>
             </form>
         </div>
             
     </header>
 
     <main>
-        <div id="dogs_index">
-            <img src="assets/img/dogs.png" alt="Chiens">
-        </div>
 
-        <div>
-            <h2>Les gardiens préférés de vos voisins !</h2>
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/dogs.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/dogs2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/dogs3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+        <div class="container">
+            <h2 id="prefere">Les gardiens préférés de vos voisins !</h2>
             <ul class="gardiens">
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/1.png" alt="1" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/2.png" alt="2" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/3.png" alt="3" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/4.png" alt="4" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
                 <li>
                     <a href="profil_gardien.html">
-                        <img src="assets/img/5.png" alt="5" class="photo_gardien">
-                        <h4>Lorem Ipsum</h4>
-                        <h5>Lorem Ipsum</h5>
-                        <span><img src="assets/img/star.png" alt="etoile"> 5</span>
-                    </a>
+                        <div class="card">
+                            <img src="assets/img/maison1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Maison dans les vosges</h5>
+                              <p class="card-text">Didier Jean <img src="assets/img/star.png" alt="etoile"> 5</p>
+                              <button href="profil_gardien.html" class="btn btn-primary">Profil du gardien</button>
+                            </div>
+                          </div>
+                        </a>
                 </li>
             </ul>
         </div>
@@ -110,12 +174,13 @@
     <footer>
         <div id="footer">
             <ul>
-                <li><a href="propos.html">À propos</a></li>
-                <li><a href="aide.html">Aide</a></li>
+                <li><a class="btn btn-primary" href="propos.html">À propos</a></li>
+                <li><a class="btn btn-primary" href="aide.html">Aide</a></li>
             </ul>
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 <script src="app.js"></script>
 </html>
